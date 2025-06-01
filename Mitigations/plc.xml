@@ -1,0 +1,2490 @@
+<?xml version='1.0' encoding='utf-8'?>
+<project xmlns:ns1="http://www.plcopen.org/xml/tc6_0201" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.plcopen.org/xml/tc6_0201">
+  <fileHeader companyName="Unknown" productName="Unnamed" productVersion="1" creationDateTime="2023-03-29T00:03:16"/>
+  <contentHeader name="Unnamed" modificationDateTime="2023-04-16T13:55:39">
+    <coordinateInfo>
+      <fbd>
+        <scaling x="10" y="10"/>
+      </fbd>
+      <ld>
+        <scaling x="10" y="10"/>
+      </ld>
+      <sfc>
+        <scaling x="10" y="10"/>
+      </sfc>
+    </coordinateInfo>
+  </contentHeader>
+  <types>
+    <dataTypes/>
+    <pous>
+      <pou name="Master_Program" pouType="program">
+        <interface>
+          <localVars>
+            <variable name="Panel_Mag_Sensor" address="%IX0.0">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Physcial Inputs on the Right Demostration Panel   offset 4 input]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="Panel_IR_Sensor" address="%IX0.1">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Physcial Inputs on the Right Demostration Panel   offset 6 input]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="Panel_Motion_Sensor" address="%IX0.2">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Physcial Inputs on the Right Demostration Panel   offset 5 input]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="Panel_GD_Remote_UP_PB" address="%IX0.3">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Physcial Inputs on the Right Demostration Panel   offset 7 input]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="Panel_GD_Remote_DOWN_PB" address="%IX0.4">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Physcial Inputs on the Right Demostration Panel   offset 8 input]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="Panel_FD_Lock_Signal" address="%IX0.5">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Physcial Inputs on the Right Demostration Panel   offset 9 input]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="Panel_Arm_Panel_PB" address="%IX0.6">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Physcial Inputs on the Right Demostration Panel   offset 2 input]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="Panel_Arm_House_PB" address="%IX0.7">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Physcial Inputs on the Right Demostration Panel   offset 3 input]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="Panel_Reset_PB" address="%IX1.0">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Physcial Inputs on the Right Demostration Panel   offset 11 input]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="Panel_FD_Unlock_Signal" address="%IX1.1">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Physcial Inputs on the Right Demostration Panel   offset 10 input]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="Panel_Alarm_Light" address="%QX0.0">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Alarm flashes when triggered                  offset 0 coil   "Changed from 0.0 for testing" 102.3 for uno pin 13]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="Home_GD_Postion_Switch" address="%IX102.0">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Physcial Inputs in the House Model       offset 801 input]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="Home_Mag_Sensor" address="%IX102.1">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Physcial Inputs in the House Model       offset 802 input]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="Home_Motion_Sensor" address="%IX102.2">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Physcial Inputs in the House Model       offset 803 input]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="Home_IR_Sensor" address="%IX102.3">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Physcial Inputs in the House Model       offset 804 input]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="Home_Green_PB_Floor_01" address="%IX102.4">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Physcial Inputs in the House Model       offset 805 input]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="Home_Green_PB_Floor_02" address="%IX102.5">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Physcial Inputs in the House Model       offset 806 input]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="Home_Blue_PB_Floor_03" address="%IX102.6">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Physcial Inputs in the House Model       offset 807 input]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="Home_Red_PB_Floor_03" address="%IX102.7">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Physcial Inputs in the House Model       offset 807 input]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="Home_Green_LED_Floor_01" address="%QX100.0">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Digital output to control GD Motor           offset 800 coil    "Changed from 100.0 for testing"]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="Home_Green_LED_Floor_02" address="%QX100.1">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Digital output to control GD Motor           offset 801 coil]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="Home_Green_LED_Floor_03" address="%QX100.2">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Digital output to control GD Motor           offset 802 coil]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="Home_White_LED_Floor_01" address="%QX100.3">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Digital output to control GD Motor           offset 803 coil]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="Home_White_LED_Floor_02" address="%QX100.4">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Digital output to control GD Motor           offset 804 coil]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="Home_White_LED_Floor_03" address="%QX100.5">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Digital output to control GD Motor           offset 805 coil]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="Home_White_LED_Floor_Backside" address="%QX100.6">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Digital output to control GD Motor           offset 806 coil]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="Home_GD_Motor_UP" address="%QX100.7">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Digital output to control GD Motor           offset 807 coil]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="Home_GD_Motor_DOWN" address="%QX101.0">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Digital output to control GD Motor           offset 808 coil]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="Home_FD_Deadbolt" address="%QX101.1">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Digital output to control FD Solenoid       offset 809 coil]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="Home_GD_Position" address="%QX101.2">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Digital output to control GD Motor           offset 810 coil]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="Panel_Arm_Virtual_PB" address="%QX10.0">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Virutal Push Button for HMI and attacks   offset 80 coil]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="Panel_Arm_Mag_Sensor_Virtual" address="%QX10.1">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Virutal Push Button for HMI and attacks   offset 81 coil]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="Panel_Arm_Motion_Sensor_Virtual" address="%QX10.2">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Virutal Push Button for HMI and attacks   offset 82 coil]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="Panel_Arm_IR_Sensor_Virtual" address="%QX10.3">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Virutal Push Button for HMI and attacks   offset 83 coil]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="Panel_Mag_Sensor_Virtual" address="%QX10.4">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Virutal Push Button for HMI and attacks   offset 84 coil]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="Panel_Motion_Sensor_Virtual" address="%QX10.5">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Virutal Push Button for HMI and attacks   offset 85 coil]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="Panel_IR_Sensor_Virtual" address="%QX10.6">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Virutal Push Button for HMI and attacks   offset 86 coil]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="Panel_GD_Up_OnOff_Virtual_PB" address="%QX10.7">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Virutal Push Button for HMI and attacks   offset 87 coil]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="Panel_GD_Remote_Up_Virtual" address="%QX11.0">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Virutal Push Button for HMI and attacks   offset 88 coil]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="Panel_GD_Down_OnOff_Virtual_PB" address="%QX11.1">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Virutal Push Button for HMI and attacks   offset 89 coil]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="Panel_GD_Remote_Down_Virtual" address="%QX11.2">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Virutal Push Button for HMI and attacks   offset 90 coil]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="Panel_FD_Lock_OnOff_Virtual_PB" address="%QX11.3">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Virutal Push Button for HMI and attacks   offset 91 coil]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="Panel_FD_Lock_Signal_Virtual" address="%QX11.4">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Virutal Push Button for HMI and attacks   offset 92 coil]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="Panel_FD_Unlock_OnOff_Virtual_PB" address="%QX11.5">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Virutal Push Button for HMI and attacks   offset 93 coil]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="Panel_FD_Unlock_Signal_Virtual" address="%QX11.6">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Virutal Push Button for HMI and attacks   offset 94 coil]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="Home_FD_Lock_Signal_Virtual" address="%QX110.0">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Virutal Push Button for HMI and attacks   offset 880 coil]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="Home_FD_Unlock_Signal_Virtual" address="%QX110.1">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Virutal Push Button for HMI and attacks   offset 881 coil]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="Home_Arm_Virtual_PB" address="%QX110.2">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Virutal Push Button for HMI and attacks   offset 882 coil]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="Home_Arm_Mag_Sensor_Virtual" address="%QX110.3">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Virutal Push Button for HMI and attacks   offset 883 coil]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="Home_Mag_Sensor_Virtual" address="%QX110.4">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Virutal Push Button for HMI and attacks   offset 884 coil]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="Home_Arm_Motion_Sensor_Virtual" address="%QX110.5">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Virutal Push Button for HMI and attacks   offset 885 coil]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="Home_Motion_Sensor_Virtual" address="%QX110.6">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Virutal Push Button for HMI and attacks   offset 886 coil]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="Home_Arm_IR_Sensor_Virtual" address="%QX110.7">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Virutal Push Button for HMI and attacks   offset 887 coil]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="Home_IR_Sensor_Virtual" address="%QX111.0">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Virutal Push Button for HMI and attacks   offset 888 coil]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="Home_Green_PB_Auto_01" address="%QX111.2">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Virutal Push Button for HMI and attacks   offset 890 coil]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="Home_Green_PB_Auto_02" address="%QX111.4">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Virutal Push Button for HMI and attacks   offset 892 coil]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="Home_Green_PB_Auto_03" address="%QX111.6">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Virutal Push Button for HMI and attacks   offset 894 coil]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="Home_Green_LED_Reset_PB" address="%QX111.7">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Virutal Push Button for HMI and attacks   offset 895 coil]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="Reset_Green_Lights" address="%QX112.0">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Virutal Push Button for HMI and attacks   offset 896 coil]]></xhtml:p>
+              </documentation>
+            </variable>
+          </localVars>
+          <localVars>
+            <variable name="TON0">
+              <type>
+                <derived name="TON"/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Waits set number of seconds before reseting the green lights.]]></xhtml:p>
+              </documentation>
+            </variable>
+          </localVars>
+          <localVars>
+            <variable name="Home_White_PD_Floor_01" address="%QX112.1">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Virutal Push Button for HMI and attacks   offset 897 coil]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="Home_White_PD_Floor_02" address="%QX112.2">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Virutal Push Button for HMI and attacks   offset 898 coil]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="Home_White_PD_Floor_03" address="%QX112.3">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Virutal Push Button for HMI and attacks   offset 899 coil]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="Home_White_PD_Backside" address="%QX112.4">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Virutal Push Button for HMI and attacks   offset 900]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="Home_Reset_PB_Virtual" address="%QX112.5">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Virutal Push Button for HMI and attacks   offset 901]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="Home_GD_OpenClose_Switch_Vir" address="%QX112.6">
+              <type>
+                <BOOL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Virutal Push Button for HMI and attacks   offset 902     "Testing"]]></xhtml:p>
+              </documentation>
+            </variable>
+          </localVars>
+        </interface>
+        <body>
+          <LD>
+            <leftPowerRail localId="1" height="2670" width="10">
+              <position x="90" y="130"/>
+              <connectionPointOut formalParameter="">
+                <relPosition x="10" y="20"/>
+              </connectionPointOut>
+              <connectionPointOut formalParameter="">
+                <relPosition x="10" y="70"/>
+              </connectionPointOut>
+              <connectionPointOut formalParameter="">
+                <relPosition x="10" y="130"/>
+              </connectionPointOut>
+              <connectionPointOut formalParameter="">
+                <relPosition x="10" y="180"/>
+              </connectionPointOut>
+              <connectionPointOut formalParameter="">
+                <relPosition x="10" y="230"/>
+              </connectionPointOut>
+              <connectionPointOut formalParameter="">
+                <relPosition x="10" y="290"/>
+              </connectionPointOut>
+              <connectionPointOut formalParameter="">
+                <relPosition x="10" y="340"/>
+              </connectionPointOut>
+              <connectionPointOut formalParameter="">
+                <relPosition x="10" y="400"/>
+              </connectionPointOut>
+              <connectionPointOut formalParameter="">
+                <relPosition x="10" y="450"/>
+              </connectionPointOut>
+              <connectionPointOut formalParameter="">
+                <relPosition x="10" y="500"/>
+              </connectionPointOut>
+              <connectionPointOut formalParameter="">
+                <relPosition x="10" y="560"/>
+              </connectionPointOut>
+              <connectionPointOut formalParameter="">
+                <relPosition x="10" y="610"/>
+              </connectionPointOut>
+              <connectionPointOut formalParameter="">
+                <relPosition x="10" y="660"/>
+              </connectionPointOut>
+              <connectionPointOut formalParameter="">
+                <relPosition x="10" y="720"/>
+              </connectionPointOut>
+              <connectionPointOut formalParameter="">
+                <relPosition x="10" y="770"/>
+              </connectionPointOut>
+              <connectionPointOut formalParameter="">
+                <relPosition x="10" y="830"/>
+              </connectionPointOut>
+              <connectionPointOut formalParameter="">
+                <relPosition x="10" y="880"/>
+              </connectionPointOut>
+              <connectionPointOut formalParameter="">
+                <relPosition x="10" y="930"/>
+              </connectionPointOut>
+              <connectionPointOut formalParameter="">
+                <relPosition x="10" y="990"/>
+              </connectionPointOut>
+              <connectionPointOut formalParameter="">
+                <relPosition x="10" y="1040"/>
+              </connectionPointOut>
+              <connectionPointOut formalParameter="">
+                <relPosition x="10" y="1090"/>
+              </connectionPointOut>
+              <connectionPointOut formalParameter="">
+                <relPosition x="10" y="1150"/>
+              </connectionPointOut>
+              <connectionPointOut formalParameter="">
+                <relPosition x="10" y="1200"/>
+              </connectionPointOut>
+              <connectionPointOut formalParameter="">
+                <relPosition x="10" y="1250"/>
+              </connectionPointOut>
+              <connectionPointOut formalParameter="">
+                <relPosition x="10" y="1310"/>
+              </connectionPointOut>
+              <connectionPointOut formalParameter="">
+                <relPosition x="10" y="1360"/>
+              </connectionPointOut>
+              <connectionPointOut formalParameter="">
+                <relPosition x="10" y="1420"/>
+              </connectionPointOut>
+              <connectionPointOut formalParameter="">
+                <relPosition x="10" y="1470"/>
+              </connectionPointOut>
+              <connectionPointOut formalParameter="">
+                <relPosition x="10" y="1520"/>
+              </connectionPointOut>
+              <connectionPointOut formalParameter="">
+                <relPosition x="10" y="1580"/>
+              </connectionPointOut>
+              <connectionPointOut formalParameter="">
+                <relPosition x="10" y="1630"/>
+              </connectionPointOut>
+              <connectionPointOut formalParameter="">
+                <relPosition x="10" y="1680"/>
+              </connectionPointOut>
+              <connectionPointOut formalParameter="">
+                <relPosition x="10" y="1740"/>
+              </connectionPointOut>
+              <connectionPointOut formalParameter="">
+                <relPosition x="10" y="1790"/>
+              </connectionPointOut>
+              <connectionPointOut formalParameter="">
+                <relPosition x="10" y="1850"/>
+              </connectionPointOut>
+              <connectionPointOut formalParameter="">
+                <relPosition x="10" y="1900"/>
+              </connectionPointOut>
+              <connectionPointOut formalParameter="">
+                <relPosition x="10" y="1950"/>
+              </connectionPointOut>
+              <connectionPointOut formalParameter="">
+                <relPosition x="10" y="2010"/>
+              </connectionPointOut>
+              <connectionPointOut formalParameter="">
+                <relPosition x="10" y="2060"/>
+              </connectionPointOut>
+              <connectionPointOut formalParameter="">
+                <relPosition x="10" y="2110"/>
+              </connectionPointOut>
+              <connectionPointOut formalParameter="">
+                <relPosition x="10" y="2170"/>
+              </connectionPointOut>
+              <connectionPointOut formalParameter="">
+                <relPosition x="10" y="2220"/>
+              </connectionPointOut>
+              <connectionPointOut formalParameter="">
+                <relPosition x="10" y="2270"/>
+              </connectionPointOut>
+              <connectionPointOut formalParameter="">
+                <relPosition x="10" y="2330"/>
+              </connectionPointOut>
+              <connectionPointOut formalParameter="">
+                <relPosition x="10" y="2380"/>
+              </connectionPointOut>
+              <connectionPointOut formalParameter="">
+                <relPosition x="10" y="2430"/>
+              </connectionPointOut>
+              <connectionPointOut formalParameter="">
+                <relPosition x="10" y="2490"/>
+              </connectionPointOut>
+              <connectionPointOut formalParameter="">
+                <relPosition x="10" y="2540"/>
+              </connectionPointOut>
+              <connectionPointOut formalParameter="">
+                <relPosition x="10" y="2600"/>
+              </connectionPointOut>
+              <connectionPointOut formalParameter="">
+                <relPosition x="10" y="2650"/>
+              </connectionPointOut>
+            </leftPowerRail>
+            <rightPowerRail localId="2" height="2670" width="10">
+              <position x="1470" y="130"/>
+              <connectionPointIn>
+                <relPosition x="0" y="20"/>
+                <connection refLocalId="7">
+                  <position x="1470" y="150"/>
+                  <position x="1331" y="150"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointIn>
+                <relPosition x="0" y="70"/>
+              </connectionPointIn>
+              <connectionPointIn>
+                <relPosition x="0" y="130"/>
+              </connectionPointIn>
+              <connectionPointIn>
+                <relPosition x="0" y="180"/>
+              </connectionPointIn>
+              <connectionPointIn>
+                <relPosition x="0" y="230"/>
+              </connectionPointIn>
+              <connectionPointIn>
+                <relPosition x="0" y="290"/>
+              </connectionPointIn>
+              <connectionPointIn>
+                <relPosition x="0" y="340"/>
+              </connectionPointIn>
+              <connectionPointIn>
+                <relPosition x="0" y="400"/>
+              </connectionPointIn>
+              <connectionPointIn>
+                <relPosition x="0" y="450"/>
+              </connectionPointIn>
+              <connectionPointIn>
+                <relPosition x="0" y="500"/>
+              </connectionPointIn>
+              <connectionPointIn>
+                <relPosition x="0" y="560"/>
+              </connectionPointIn>
+              <connectionPointIn>
+                <relPosition x="0" y="610"/>
+              </connectionPointIn>
+              <connectionPointIn>
+                <relPosition x="0" y="660"/>
+              </connectionPointIn>
+              <connectionPointIn>
+                <relPosition x="0" y="720"/>
+                <connection refLocalId="33">
+                  <position x="1470" y="850"/>
+                  <position x="1291" y="850"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointIn>
+                <relPosition x="0" y="770"/>
+              </connectionPointIn>
+              <connectionPointIn>
+                <relPosition x="0" y="830"/>
+                <connection refLocalId="36">
+                  <position x="1470" y="960"/>
+                  <position x="1291" y="960"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointIn>
+                <relPosition x="0" y="880"/>
+                <connection refLocalId="37">
+                  <position x="1470" y="1010"/>
+                  <position x="1291" y="1010"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointIn>
+                <relPosition x="0" y="930"/>
+              </connectionPointIn>
+              <connectionPointIn>
+                <relPosition x="0" y="990"/>
+                <connection refLocalId="40">
+                  <position x="1470" y="1120"/>
+                  <position x="1291" y="1120"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointIn>
+                <relPosition x="0" y="1040"/>
+                <connection refLocalId="43">
+                  <position x="1470" y="1170"/>
+                  <position x="1291" y="1170"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointIn>
+                <relPosition x="0" y="1090"/>
+              </connectionPointIn>
+              <connectionPointIn>
+                <relPosition x="0" y="1150"/>
+                <connection refLocalId="46">
+                  <position x="1470" y="1280"/>
+                  <position x="1291" y="1280"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointIn>
+                <relPosition x="0" y="1200"/>
+                <connection refLocalId="55">
+                  <position x="1470" y="1330"/>
+                  <position x="1291" y="1330"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointIn>
+                <relPosition x="0" y="1250"/>
+              </connectionPointIn>
+              <connectionPointIn>
+                <relPosition x="0" y="1310"/>
+                <connection refLocalId="121">
+                  <position x="1470" y="1440"/>
+                  <position x="1290" y="1440"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointIn>
+                <relPosition x="0" y="1360"/>
+              </connectionPointIn>
+              <connectionPointIn>
+                <relPosition x="0" y="1420"/>
+              </connectionPointIn>
+              <connectionPointIn>
+                <relPosition x="0" y="1470"/>
+              </connectionPointIn>
+              <connectionPointIn>
+                <relPosition x="0" y="1520"/>
+              </connectionPointIn>
+              <connectionPointIn>
+                <relPosition x="0" y="1580"/>
+              </connectionPointIn>
+              <connectionPointIn>
+                <relPosition x="0" y="1630"/>
+                <connection refLocalId="49">
+                  <position x="1470" y="1760"/>
+                  <position x="1301" y="1760"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointIn>
+                <relPosition x="0" y="1680"/>
+              </connectionPointIn>
+              <connectionPointIn>
+                <relPosition x="0" y="1740"/>
+              </connectionPointIn>
+              <connectionPointIn>
+                <relPosition x="0" y="1790"/>
+                <connection refLocalId="73">
+                  <position x="1470" y="1920"/>
+                  <position x="1301" y="1920"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointIn>
+                <relPosition x="0" y="1850"/>
+              </connectionPointIn>
+              <connectionPointIn>
+                <relPosition x="0" y="1900"/>
+                <connection refLocalId="74">
+                  <position x="1470" y="2030"/>
+                  <position x="1301" y="2030"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointIn>
+                <relPosition x="0" y="1950"/>
+              </connectionPointIn>
+              <connectionPointIn>
+                <relPosition x="0" y="2010"/>
+              </connectionPointIn>
+              <connectionPointIn>
+                <relPosition x="0" y="2060"/>
+                <connection refLocalId="75">
+                  <position x="1470" y="2190"/>
+                  <position x="1301" y="2190"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointIn>
+                <relPosition x="0" y="2110"/>
+              </connectionPointIn>
+              <connectionPointIn>
+                <relPosition x="0" y="2170"/>
+                <connection refLocalId="77">
+                  <position x="1470" y="2300"/>
+                  <position x="1301" y="2300"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointIn>
+                <relPosition x="0" y="2220"/>
+              </connectionPointIn>
+              <connectionPointIn>
+                <relPosition x="0" y="2270"/>
+                <connection refLocalId="78">
+                  <position x="1470" y="2400"/>
+                  <position x="1301" y="2400"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointIn>
+                <relPosition x="0" y="2330"/>
+              </connectionPointIn>
+              <connectionPointIn>
+                <relPosition x="0" y="2380"/>
+                <connection refLocalId="80">
+                  <position x="1470" y="2510"/>
+                  <position x="1301" y="2510"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointIn>
+                <relPosition x="0" y="2430"/>
+              </connectionPointIn>
+              <connectionPointIn>
+                <relPosition x="0" y="2490"/>
+                <connection refLocalId="57">
+                  <position x="1470" y="2620"/>
+                  <position x="1301" y="2620"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointIn>
+                <relPosition x="0" y="2540"/>
+                <connection refLocalId="61">
+                  <position x="1470" y="2670"/>
+                  <position x="1301" y="2670"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointIn>
+                <relPosition x="0" y="2600"/>
+                <connection refLocalId="62">
+                  <position x="1470" y="2730"/>
+                  <position x="1301" y="2730"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointIn>
+                <relPosition x="0" y="2650"/>
+                <connection refLocalId="63">
+                  <position x="1470" y="2780"/>
+                  <position x="1301" y="2780"/>
+                </connection>
+              </connectionPointIn>
+            </rightPowerRail>
+            <contact localId="3" height="20" width="21" negated="false">
+              <position x="190" y="140"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="1">
+                  <position x="190" y="150"/>
+                  <position x="100" y="150"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Panel_Arm_Panel_PB</variable>
+            </contact>
+            <contact localId="4" height="20" width="21" negated="true">
+              <position x="740" y="140"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="86">
+                  <position x="740" y="150"/>
+                  <position x="471" y="150"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Panel_Mag_Sensor</variable>
+            </contact>
+            <contact localId="5" height="20" width="21" negated="false">
+              <position x="740" y="230"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="87">
+                  <position x="740" y="240"/>
+                  <position x="471" y="240"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Panel_Motion_Sensor</variable>
+            </contact>
+            <contact localId="6" height="20" width="21" negated="true" executionOrderId="0">
+              <position x="740" y="320"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="90">
+                  <position x="740" y="330"/>
+                  <position x="471" y="330"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Panel_IR_Sensor</variable>
+            </contact>
+            <coil localId="7" height="20" width="21" negated="false">
+              <position x="1310" y="140"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="4">
+                  <position x="1310" y="150"/>
+                  <position x="761" y="150"/>
+                </connection>
+                <connection refLocalId="88">
+                  <position x="1310" y="150"/>
+                  <position x="880" y="150"/>
+                  <position x="880" y="190"/>
+                  <position x="761" y="190"/>
+                </connection>
+                <connection refLocalId="5">
+                  <position x="1310" y="150"/>
+                  <position x="880" y="150"/>
+                  <position x="880" y="240"/>
+                  <position x="761" y="240"/>
+                </connection>
+                <connection refLocalId="89">
+                  <position x="1310" y="150"/>
+                  <position x="880" y="150"/>
+                  <position x="880" y="280"/>
+                  <position x="761" y="280"/>
+                </connection>
+                <connection refLocalId="6">
+                  <position x="1310" y="150"/>
+                  <position x="880" y="150"/>
+                  <position x="880" y="330"/>
+                  <position x="761" y="330"/>
+                </connection>
+                <connection refLocalId="91">
+                  <position x="1310" y="150"/>
+                  <position x="880" y="150"/>
+                  <position x="880" y="370"/>
+                  <position x="761" y="370"/>
+                </connection>
+                <connection refLocalId="25">
+                  <position x="1310" y="150"/>
+                  <position x="1035" y="150"/>
+                  <position x="1035" y="530"/>
+                  <position x="761" y="530"/>
+                </connection>
+                <connection refLocalId="104">
+                  <position x="1310" y="150"/>
+                  <position x="1035" y="150"/>
+                  <position x="1035" y="570"/>
+                  <position x="761" y="570"/>
+                </connection>
+                <connection refLocalId="26">
+                  <position x="1310" y="150"/>
+                  <position x="1035" y="150"/>
+                  <position x="1035" y="630"/>
+                  <position x="761" y="630"/>
+                </connection>
+                <connection refLocalId="106">
+                  <position x="1310" y="150"/>
+                  <position x="1035" y="150"/>
+                  <position x="1035" y="680"/>
+                  <position x="761" y="680"/>
+                </connection>
+                <connection refLocalId="27">
+                  <position x="1310" y="150"/>
+                  <position x="1035" y="150"/>
+                  <position x="1035" y="730"/>
+                  <position x="761" y="730"/>
+                </connection>
+                <connection refLocalId="108">
+                  <position x="1310" y="150"/>
+                  <position x="1035" y="150"/>
+                  <position x="1035" y="790"/>
+                  <position x="761" y="790"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Panel_Alarm_Light</variable>
+            </coil>
+            <comment localId="22" height="40" width="670">
+              <position x="350" y="40"/>
+              <content>
+                <xhtml:p><![CDATA[Right Panel PLC logic for the SCADA Home Security Steam Outreach Project]]></xhtml:p>
+              </content>
+            </comment>
+            <contact localId="24" height="20" width="21" negated="false" executionOrderId="0">
+              <position x="180" y="520"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="1">
+                  <position x="180" y="530"/>
+                  <position x="100" y="530"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Panel_Arm_House_PB</variable>
+            </contact>
+            <contact localId="25" height="20" width="21" negated="false" executionOrderId="0">
+              <position x="740" y="520"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="103">
+                  <position x="740" y="530"/>
+                  <position x="471" y="530"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Home_Mag_Sensor</variable>
+            </contact>
+            <contact localId="26" height="20" width="21" negated="false" executionOrderId="0">
+              <position x="740" y="620"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="105">
+                  <position x="740" y="630"/>
+                  <position x="471" y="630"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Home_Motion_Sensor</variable>
+            </contact>
+            <contact localId="27" height="20" width="21" negated="true" executionOrderId="0">
+              <position x="740" y="720"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="107">
+                  <position x="740" y="730"/>
+                  <position x="471" y="730"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Home_IR_Sensor</variable>
+            </contact>
+            <contact localId="30" height="20" width="21" negated="true">
+              <position x="1020" y="840"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="34">
+                  <position x="1020" y="850"/>
+                  <position x="810" y="850"/>
+                  <position x="810" y="910"/>
+                  <position x="471" y="910"/>
+                </connection>
+                <connection refLocalId="31">
+                  <position x="1020" y="850"/>
+                  <position x="471" y="850"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Reset_Green_Lights</variable>
+            </contact>
+            <contact localId="31" height="20" width="21" negated="true">
+              <position x="450" y="840"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="24">
+                  <position x="450" y="850"/>
+                  <position x="325" y="850"/>
+                  <position x="325" y="530"/>
+                  <position x="201" y="530"/>
+                </connection>
+                <connection refLocalId="101">
+                  <position x="450" y="850"/>
+                  <position x="300" y="850"/>
+                  <position x="300" y="580"/>
+                  <position x="201" y="580"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Home_Green_PB_Floor_01</variable>
+            </contact>
+            <coil localId="33" height="20" width="21" negated="false">
+              <position x="1270" y="840"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="30">
+                  <position x="1270" y="850"/>
+                  <position x="1041" y="850"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Home_Green_PB_Auto_01</variable>
+            </coil>
+            <contact localId="34" height="20" width="21" negated="false">
+              <position x="450" y="900"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="24">
+                  <position x="450" y="910"/>
+                  <position x="325" y="910"/>
+                  <position x="325" y="530"/>
+                  <position x="201" y="530"/>
+                </connection>
+                <connection refLocalId="101">
+                  <position x="450" y="910"/>
+                  <position x="300" y="910"/>
+                  <position x="300" y="580"/>
+                  <position x="201" y="580"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Home_Green_PB_Auto_01</variable>
+            </contact>
+            <contact localId="35" height="20" width="21" negated="false">
+              <position x="450" y="950"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="24">
+                  <position x="450" y="960"/>
+                  <position x="325" y="960"/>
+                  <position x="325" y="530"/>
+                  <position x="201" y="530"/>
+                </connection>
+                <connection refLocalId="101">
+                  <position x="450" y="960"/>
+                  <position x="300" y="960"/>
+                  <position x="300" y="580"/>
+                  <position x="201" y="580"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Home_Green_PB_Auto_01</variable>
+            </contact>
+            <coil localId="36" height="20" width="21" negated="false">
+              <position x="1270" y="950"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="35">
+                  <position x="1270" y="960"/>
+                  <position x="471" y="960"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Home_Green_LED_Floor_01</variable>
+            </coil>
+            <contact localId="23" height="20" width="21" negated="true" executionOrderId="0">
+              <position x="1020" y="1000"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="38">
+                  <position x="1020" y="1010"/>
+                  <position x="810" y="1010"/>
+                  <position x="810" y="1070"/>
+                  <position x="471" y="1070"/>
+                </connection>
+                <connection refLocalId="32">
+                  <position x="1020" y="1010"/>
+                  <position x="471" y="1010"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Reset_Green_Lights</variable>
+            </contact>
+            <contact localId="32" height="20" width="21" negated="true" executionOrderId="0">
+              <position x="450" y="1000"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="101">
+                  <position x="450" y="1010"/>
+                  <position x="300" y="1010"/>
+                  <position x="300" y="580"/>
+                  <position x="201" y="580"/>
+                </connection>
+                <connection refLocalId="24">
+                  <position x="450" y="1010"/>
+                  <position x="325" y="1010"/>
+                  <position x="325" y="530"/>
+                  <position x="201" y="530"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Home_Green_PB_Floor_02</variable>
+            </contact>
+            <coil localId="37" height="20" width="21" negated="false" executionOrderId="0">
+              <position x="1270" y="1000"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="23">
+                  <position x="1270" y="1010"/>
+                  <position x="1041" y="1010"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Home_Green_PB_Auto_02</variable>
+            </coil>
+            <contact localId="38" height="20" width="21" negated="false" executionOrderId="0">
+              <position x="450" y="1060"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="101">
+                  <position x="450" y="1070"/>
+                  <position x="300" y="1070"/>
+                  <position x="300" y="580"/>
+                  <position x="201" y="580"/>
+                </connection>
+                <connection refLocalId="24">
+                  <position x="450" y="1070"/>
+                  <position x="325" y="1070"/>
+                  <position x="325" y="530"/>
+                  <position x="201" y="530"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Home_Green_PB_Auto_02</variable>
+            </contact>
+            <contact localId="39" height="20" width="21" negated="false" executionOrderId="0">
+              <position x="450" y="1110"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="101">
+                  <position x="450" y="1120"/>
+                  <position x="300" y="1120"/>
+                  <position x="300" y="580"/>
+                  <position x="201" y="580"/>
+                </connection>
+                <connection refLocalId="24">
+                  <position x="450" y="1120"/>
+                  <position x="325" y="1120"/>
+                  <position x="325" y="530"/>
+                  <position x="201" y="530"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Home_Green_PB_Auto_02</variable>
+            </contact>
+            <coil localId="40" height="20" width="21" negated="false" executionOrderId="0">
+              <position x="1270" y="1110"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="39">
+                  <position x="1270" y="1120"/>
+                  <position x="471" y="1120"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Home_Green_LED_Floor_02</variable>
+            </coil>
+            <contact localId="41" height="20" width="21" negated="true" executionOrderId="0">
+              <position x="1020" y="1160"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="44">
+                  <position x="1020" y="1170"/>
+                  <position x="810" y="1170"/>
+                  <position x="810" y="1220"/>
+                  <position x="471" y="1220"/>
+                </connection>
+                <connection refLocalId="42">
+                  <position x="1020" y="1170"/>
+                  <position x="471" y="1170"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Reset_Green_Lights</variable>
+            </contact>
+            <contact localId="42" height="20" width="21" negated="true" executionOrderId="0">
+              <position x="450" y="1160"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="101">
+                  <position x="450" y="1170"/>
+                  <position x="300" y="1170"/>
+                  <position x="300" y="580"/>
+                  <position x="201" y="580"/>
+                </connection>
+                <connection refLocalId="24">
+                  <position x="450" y="1170"/>
+                  <position x="325" y="1170"/>
+                  <position x="325" y="530"/>
+                  <position x="201" y="530"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Home_Blue_PB_Floor_03</variable>
+            </contact>
+            <coil localId="43" height="20" width="21" negated="false" executionOrderId="0">
+              <position x="1270" y="1160"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="41">
+                  <position x="1270" y="1170"/>
+                  <position x="1041" y="1170"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Home_Green_PB_Auto_03</variable>
+            </coil>
+            <contact localId="44" height="20" width="21" negated="false" executionOrderId="0">
+              <position x="450" y="1210"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="101">
+                  <position x="450" y="1220"/>
+                  <position x="300" y="1220"/>
+                  <position x="300" y="580"/>
+                  <position x="201" y="580"/>
+                </connection>
+                <connection refLocalId="24">
+                  <position x="450" y="1220"/>
+                  <position x="325" y="1220"/>
+                  <position x="325" y="530"/>
+                  <position x="201" y="530"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Home_Green_PB_Auto_03</variable>
+            </contact>
+            <contact localId="45" height="20" width="21" negated="false" executionOrderId="0">
+              <position x="450" y="1270"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="101">
+                  <position x="450" y="1280"/>
+                  <position x="300" y="1280"/>
+                  <position x="300" y="580"/>
+                  <position x="201" y="580"/>
+                </connection>
+                <connection refLocalId="24">
+                  <position x="450" y="1280"/>
+                  <position x="325" y="1280"/>
+                  <position x="325" y="530"/>
+                  <position x="201" y="530"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Home_Green_PB_Auto_03</variable>
+            </contact>
+            <coil localId="46" height="20" width="21" negated="false" executionOrderId="0">
+              <position x="1270" y="1270"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="45">
+                  <position x="1270" y="1280"/>
+                  <position x="471" y="1280"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Home_Green_LED_Floor_03</variable>
+            </coil>
+            <contact localId="47" height="20" width="21" negated="false">
+              <position x="250" y="1750"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="1">
+                  <position x="250" y="1760"/>
+                  <position x="100" y="1760"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Home_Green_LED_Reset_PB</variable>
+            </contact>
+            <comment localId="48" height="40" width="870">
+              <position x="420" y="1670"/>
+              <content>
+                <xhtml:p><![CDATA[Pressing the Reset button or setting of the Alarm will reset all the green lights. Delay = 5000ms = 5s]]></xhtml:p>
+              </content>
+            </comment>
+            <coil localId="49" height="20" width="21" negated="false">
+              <position x="1280" y="1750"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="50">
+                  <position x="1280" y="1760"/>
+                  <position x="590" y="1760"/>
+                  <position x="590" y="1810"/>
+                  <position x="271" y="1810"/>
+                </connection>
+                <connection refLocalId="51" formalParameter="Q">
+                  <position x="1280" y="1760"/>
+                  <position x="530" y="1760"/>
+                </connection>
+                <connection refLocalId="112">
+                  <position x="1280" y="1760"/>
+                  <position x="590" y="1760"/>
+                  <position x="590" y="1870"/>
+                  <position x="271" y="1870"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Reset_Green_Lights</variable>
+            </coil>
+            <contact localId="50" height="20" width="21" negated="false">
+              <position x="250" y="1800"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="1">
+                  <position x="250" y="1810"/>
+                  <position x="100" y="1810"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Panel_Alarm_Light</variable>
+            </contact>
+            <block localId="51" typeName="TON" instanceName="TON0" height="70" width="50">
+              <position x="480" y="1730"/>
+              <inputVariables>
+                <variable formalParameter="IN">
+                  <connectionPointIn>
+                    <relPosition x="0" y="30"/>
+                    <connection refLocalId="47">
+                      <position x="480" y="1760"/>
+                      <position x="271" y="1760"/>
+                    </connection>
+                  </connectionPointIn>
+                </variable>
+                <variable formalParameter="PT">
+                  <connectionPointIn>
+                    <relPosition x="0" y="60"/>
+                    <connection refLocalId="52">
+                      <position x="480" y="1790"/>
+                      <position x="440" y="1790"/>
+                      <position x="440" y="1780"/>
+                      <position x="430" y="1780"/>
+                    </connection>
+                  </connectionPointIn>
+                </variable>
+              </inputVariables>
+              <inOutVariables/>
+              <outputVariables>
+                <variable formalParameter="Q">
+                  <connectionPointOut>
+                    <relPosition x="50" y="30"/>
+                  </connectionPointOut>
+                </variable>
+                <variable formalParameter="ET">
+                  <connectionPointOut>
+                    <relPosition x="50" y="60"/>
+                  </connectionPointOut>
+                </variable>
+              </outputVariables>
+            </block>
+            <inVariable localId="52" height="30" width="80" negated="false">
+              <position x="350" y="1770"/>
+              <connectionPointOut>
+                <relPosition x="80" y="10"/>
+              </connectionPointOut>
+              <expression>T#5000ms</expression>
+            </inVariable>
+            <contact localId="54" height="20" width="21" negated="false">
+              <position x="450" y="1320"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="101">
+                  <position x="450" y="1330"/>
+                  <position x="300" y="1330"/>
+                  <position x="300" y="580"/>
+                  <position x="201" y="580"/>
+                </connection>
+                <connection refLocalId="24">
+                  <position x="450" y="1330"/>
+                  <position x="325" y="1330"/>
+                  <position x="325" y="530"/>
+                  <position x="201" y="530"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Home_Green_PB_Auto_03</variable>
+            </contact>
+            <coil localId="55" height="20" width="21" negated="false">
+              <position x="1270" y="1320"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="54">
+                  <position x="1270" y="1330"/>
+                  <position x="471" y="1330"/>
+                </connection>
+                <connection refLocalId="114">
+                  <position x="1270" y="1330"/>
+                  <position x="810" y="1330"/>
+                  <position x="810" y="1380"/>
+                  <position x="471" y="1380"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Home_Green_LED_Reset_PB</variable>
+            </coil>
+            <contact localId="56" height="20" width="21" negated="false">
+              <position x="320" y="2610"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="1">
+                  <position x="320" y="2620"/>
+                  <position x="100" y="2620"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Home_White_PD_Floor_01</variable>
+            </contact>
+            <coil localId="57" height="20" width="21" negated="false">
+              <position x="1280" y="2610"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="56">
+                  <position x="1280" y="2620"/>
+                  <position x="341" y="2620"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Home_White_LED_Floor_01</variable>
+            </coil>
+            <contact localId="58" height="20" width="21" negated="false">
+              <position x="320" y="2660"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="1">
+                  <position x="320" y="2670"/>
+                  <position x="100" y="2670"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Home_White_PD_Floor_02</variable>
+            </contact>
+            <contact localId="60" height="20" width="21" negated="false">
+              <position x="320" y="2770"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="1">
+                  <position x="320" y="2780"/>
+                  <position x="100" y="2780"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Home_White_PD_Backside</variable>
+            </contact>
+            <coil localId="61" height="20" width="21" negated="false">
+              <position x="1280" y="2660"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="58">
+                  <position x="1280" y="2670"/>
+                  <position x="341" y="2670"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Home_White_LED_Floor_02</variable>
+            </coil>
+            <coil localId="62" height="20" width="21" negated="false">
+              <position x="1280" y="2720"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="118">
+                  <position x="1280" y="2730"/>
+                  <position x="340" y="2730"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Home_White_LED_Floor_03</variable>
+            </coil>
+            <coil localId="63" height="20" width="21" negated="false">
+              <position x="1280" y="2770"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="60">
+                  <position x="1280" y="2780"/>
+                  <position x="341" y="2780"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Home_White_LED_Floor_Backside</variable>
+            </coil>
+            <comment localId="64" height="50" width="1130">
+              <position x="230" y="2530"/>
+              <content>
+                <xhtml:p><![CDATA[The White_PB switches are virtual switches used to control the white LEDs from the HMI. They include Floor 1-3 and the Backside panel.]]></xhtml:p>
+              </content>
+            </comment>
+            <contact localId="67" height="20" width="21" negated="false" executionOrderId="0">
+              <position x="640" y="1910"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="93">
+                  <position x="640" y="1920"/>
+                  <position x="271" y="1920"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Panel_GD_Remote_UP_PB</variable>
+            </contact>
+            <contact localId="68" height="20" width="21" negated="false" executionOrderId="0">
+              <position x="640" y="2020"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="95">
+                  <position x="640" y="2030"/>
+                  <position x="271" y="2030"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Panel_GD_Remote_DOWN_PB</variable>
+            </contact>
+            <contact localId="69" height="20" width="21" negated="false" executionOrderId="0">
+              <position x="640" y="2180"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="97">
+                  <position x="640" y="2190"/>
+                  <position x="271" y="2190"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Panel_FD_Lock_Signal</variable>
+            </contact>
+            <contact localId="70" height="20" width="21" negated="false" executionOrderId="0">
+              <position x="640" y="2390"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="99">
+                  <position x="640" y="2400"/>
+                  <position x="261" y="2400"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Panel_FD_Unlock_Signal</variable>
+            </contact>
+            <coil localId="73" height="20" width="21" negated="false" executionOrderId="0">
+              <position x="1280" y="1910"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="67">
+                  <position x="1280" y="1920"/>
+                  <position x="661" y="1920"/>
+                </connection>
+                <connection refLocalId="94">
+                  <position x="1280" y="1920"/>
+                  <position x="810" y="1920"/>
+                  <position x="810" y="1960"/>
+                  <position x="661" y="1960"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Home_GD_Motor_UP</variable>
+            </coil>
+            <coil localId="74" height="20" width="21" negated="false" executionOrderId="0">
+              <position x="1280" y="2020"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="68">
+                  <position x="1280" y="2030"/>
+                  <position x="661" y="2030"/>
+                </connection>
+                <connection refLocalId="96">
+                  <position x="1280" y="2030"/>
+                  <position x="810" y="2030"/>
+                  <position x="810" y="2080"/>
+                  <position x="661" y="2080"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Home_GD_Motor_DOWN</variable>
+            </coil>
+            <coil localId="75" height="20" width="21" negated="false" executionOrderId="0">
+              <position x="1280" y="2180"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="81">
+                  <position x="1280" y="2190"/>
+                  <position x="951" y="2190"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Home_FD_Lock_Signal_Virtual</variable>
+            </coil>
+            <contact localId="76" height="20" width="21" negated="false" executionOrderId="0">
+              <position x="250" y="2290"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="1">
+                  <position x="250" y="2300"/>
+                  <position x="100" y="2300"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Home_FD_Lock_Signal_Virtual</variable>
+            </contact>
+            <coil localId="77" height="20" width="21" negated="true" executionOrderId="0">
+              <position x="1280" y="2290"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="76">
+                  <position x="1280" y="2300"/>
+                  <position x="271" y="2300"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Home_FD_Deadbolt</variable>
+            </coil>
+            <coil localId="78" height="20" width="21" negated="false" executionOrderId="0">
+              <position x="1280" y="2390"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="82">
+                  <position x="1280" y="2400"/>
+                  <position x="981" y="2400"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Home_FD_Unlock_Signal_Virtual</variable>
+            </coil>
+            <contact localId="79" height="20" width="21" negated="false" executionOrderId="0">
+              <position x="240" y="2500"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="1">
+                  <position x="240" y="2510"/>
+                  <position x="100" y="2510"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Home_FD_Unlock_Signal_Virtual</variable>
+            </contact>
+            <coil localId="80" height="20" width="21" negated="false" executionOrderId="0">
+              <position x="1280" y="2500"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="79">
+                  <position x="1280" y="2510"/>
+                  <position x="261" y="2510"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Home_FD_Deadbolt</variable>
+            </coil>
+            <contact localId="81" height="20" width="21" negated="true" executionOrderId="0">
+              <position x="930" y="2180"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="69">
+                  <position x="930" y="2190"/>
+                  <position x="661" y="2190"/>
+                </connection>
+                <connection refLocalId="98">
+                  <position x="930" y="2190"/>
+                  <position x="810" y="2190"/>
+                  <position x="810" y="2240"/>
+                  <position x="661" y="2240"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Panel_FD_Unlock_Signal</variable>
+            </contact>
+            <contact localId="82" height="20" width="21" negated="true" executionOrderId="0">
+              <position x="960" y="2390"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="70">
+                  <position x="960" y="2400"/>
+                  <position x="661" y="2400"/>
+                </connection>
+                <connection refLocalId="100">
+                  <position x="960" y="2400"/>
+                  <position x="810" y="2400"/>
+                  <position x="810" y="2460"/>
+                  <position x="661" y="2460"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Panel_FD_Lock_Signal</variable>
+            </contact>
+            <contact localId="86" height="20" width="21" negated="false">
+              <position x="450" y="140"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="3">
+                  <position x="450" y="150"/>
+                  <position x="211" y="150"/>
+                </connection>
+                <connection refLocalId="92">
+                  <position x="450" y="150"/>
+                  <position x="300" y="150"/>
+                  <position x="300" y="200"/>
+                  <position x="211" y="200"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Panel_Arm_Mag_Sensor_Virtual</variable>
+            </contact>
+            <contact localId="87" height="20" width="21" negated="false">
+              <position x="450" y="230"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="3">
+                  <position x="450" y="240"/>
+                  <position x="330" y="240"/>
+                  <position x="330" y="150"/>
+                  <position x="211" y="150"/>
+                </connection>
+                <connection refLocalId="92">
+                  <position x="450" y="240"/>
+                  <position x="300" y="240"/>
+                  <position x="300" y="200"/>
+                  <position x="211" y="200"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Panel_Arm_Motion_Sensor_Virtual</variable>
+            </contact>
+            <contact localId="88" height="20" width="21" negated="false">
+              <position x="740" y="180"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="86">
+                  <position x="740" y="190"/>
+                  <position x="619" y="190"/>
+                  <position x="619" y="150"/>
+                  <position x="471" y="150"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Panel_Mag_Sensor_Virtual</variable>
+            </contact>
+            <contact localId="89" height="20" width="21" negated="false">
+              <position x="740" y="270"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="87">
+                  <position x="740" y="280"/>
+                  <position x="620" y="280"/>
+                  <position x="620" y="240"/>
+                  <position x="471" y="240"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Panel_Motion_Sensor_Virtual</variable>
+            </contact>
+            <contact localId="90" height="20" width="21" negated="false">
+              <position x="450" y="320"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="3">
+                  <position x="450" y="330"/>
+                  <position x="330" y="330"/>
+                  <position x="330" y="150"/>
+                  <position x="211" y="150"/>
+                </connection>
+                <connection refLocalId="92">
+                  <position x="450" y="330"/>
+                  <position x="300" y="330"/>
+                  <position x="300" y="200"/>
+                  <position x="211" y="200"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Panel_Arm_IR_Sensor_Virtual</variable>
+            </contact>
+            <contact localId="91" height="20" width="21" negated="false">
+              <position x="740" y="360"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="90">
+                  <position x="740" y="370"/>
+                  <position x="620" y="370"/>
+                  <position x="620" y="330"/>
+                  <position x="471" y="330"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Panel_IR_Sensor_Virtual</variable>
+            </contact>
+            <contact localId="92" height="20" width="21" negated="false">
+              <position x="190" y="190"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="1">
+                  <position x="190" y="200"/>
+                  <position x="100" y="200"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Panel_Arm_Virtual_PB</variable>
+            </contact>
+            <contact localId="93" height="20" width="21" negated="false">
+              <position x="250" y="1910"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="1">
+                  <position x="250" y="1920"/>
+                  <position x="100" y="1920"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Panel_GD_Up_OnOff_Virtual_PB</variable>
+            </contact>
+            <contact localId="94" height="20" width="21" negated="false">
+              <position x="640" y="1950"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="93">
+                  <position x="640" y="1960"/>
+                  <position x="505" y="1960"/>
+                  <position x="505" y="1920"/>
+                  <position x="271" y="1920"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Panel_GD_Remote_Up_Virtual</variable>
+            </contact>
+            <contact localId="95" height="20" width="21" negated="false">
+              <position x="250" y="2020"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="1">
+                  <position x="250" y="2030"/>
+                  <position x="100" y="2030"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Panel_GD_Down_OnOff_Virtual_PB</variable>
+            </contact>
+            <contact localId="96" height="20" width="21" negated="false">
+              <position x="640" y="2070"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="95">
+                  <position x="640" y="2080"/>
+                  <position x="510" y="2080"/>
+                  <position x="510" y="2030"/>
+                  <position x="271" y="2030"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Panel_GD_Remote_Down_Virtual</variable>
+            </contact>
+            <contact localId="97" height="20" width="21" negated="false">
+              <position x="250" y="2180"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="1">
+                  <position x="250" y="2190"/>
+                  <position x="100" y="2190"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Panel_FD_Lock_OnOff_Virtual_PB</variable>
+            </contact>
+            <contact localId="98" height="20" width="21" negated="false">
+              <position x="640" y="2230"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="97">
+                  <position x="640" y="2240"/>
+                  <position x="510" y="2240"/>
+                  <position x="510" y="2190"/>
+                  <position x="271" y="2190"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Panel_FD_Lock_Signal_Virtual</variable>
+            </contact>
+            <contact localId="99" height="20" width="21" negated="false">
+              <position x="240" y="2390"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="1">
+                  <position x="240" y="2400"/>
+                  <position x="100" y="2400"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Panel_FD_Unlock_OnOff_Virtual_PB</variable>
+            </contact>
+            <contact localId="100" height="20" width="21" negated="false">
+              <position x="640" y="2450"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="99">
+                  <position x="640" y="2460"/>
+                  <position x="510" y="2460"/>
+                  <position x="510" y="2400"/>
+                  <position x="261" y="2400"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Panel_FD_Unlock_Signal_Virtual</variable>
+            </contact>
+            <contact localId="101" height="20" width="21" negated="false">
+              <position x="180" y="570"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="1">
+                  <position x="180" y="580"/>
+                  <position x="100" y="580"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Home_Arm_Virtual_PB</variable>
+            </contact>
+            <contact localId="103" height="20" width="21" negated="false">
+              <position x="450" y="520"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="101">
+                  <position x="450" y="530"/>
+                  <position x="300" y="530"/>
+                  <position x="300" y="580"/>
+                  <position x="201" y="580"/>
+                </connection>
+                <connection refLocalId="24">
+                  <position x="450" y="530"/>
+                  <position x="201" y="530"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Home_Arm_Mag_Sensor_Virtual</variable>
+            </contact>
+            <contact localId="104" height="20" width="21" negated="false">
+              <position x="740" y="560"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="103">
+                  <position x="740" y="570"/>
+                  <position x="620" y="570"/>
+                  <position x="620" y="530"/>
+                  <position x="471" y="530"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Home_Mag_Sensor_Virtual</variable>
+            </contact>
+            <contact localId="105" height="20" width="21" negated="false">
+              <position x="450" y="620"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="101">
+                  <position x="450" y="630"/>
+                  <position x="300" y="630"/>
+                  <position x="300" y="580"/>
+                  <position x="201" y="580"/>
+                </connection>
+                <connection refLocalId="24">
+                  <position x="450" y="630"/>
+                  <position x="325" y="630"/>
+                  <position x="325" y="530"/>
+                  <position x="201" y="530"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Home_Arm_Motion_Sensor_Virtual</variable>
+            </contact>
+            <contact localId="106" height="20" width="21" negated="false">
+              <position x="740" y="670"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="105">
+                  <position x="740" y="680"/>
+                  <position x="620" y="680"/>
+                  <position x="620" y="630"/>
+                  <position x="471" y="630"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Home_Motion_Sensor_Virtual</variable>
+            </contact>
+            <contact localId="107" height="20" width="21" negated="false">
+              <position x="450" y="720"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="101">
+                  <position x="450" y="730"/>
+                  <position x="300" y="730"/>
+                  <position x="300" y="580"/>
+                  <position x="201" y="580"/>
+                </connection>
+                <connection refLocalId="24">
+                  <position x="450" y="730"/>
+                  <position x="325" y="730"/>
+                  <position x="325" y="530"/>
+                  <position x="201" y="530"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Home_Arm_IR_Sensor_Virtual</variable>
+            </contact>
+            <contact localId="108" height="20" width="21" negated="false">
+              <position x="740" y="780"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="107">
+                  <position x="740" y="790"/>
+                  <position x="620" y="790"/>
+                  <position x="620" y="730"/>
+                  <position x="471" y="730"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Home_IR_Sensor_Virtual</variable>
+            </contact>
+            <comment localId="109" height="70" width="760">
+              <position x="160" y="400"/>
+              <content>
+                <xhtml:p><![CDATA[PLC logic for the SCADA House Model that includes virtual contacts to allow for better control of the system]]></xhtml:p>
+              </content>
+            </comment>
+            <contact localId="112" height="20" width="21" negated="false">
+              <position x="250" y="1860"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="1">
+                  <position x="250" y="1870"/>
+                  <position x="100" y="1870"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Panel_Reset_PB</variable>
+            </contact>
+            <contact localId="114" height="20" width="21" negated="false">
+              <position x="450" y="1370"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="101">
+                  <position x="450" y="1380"/>
+                  <position x="300" y="1380"/>
+                  <position x="300" y="580"/>
+                  <position x="201" y="580"/>
+                </connection>
+                <connection refLocalId="24">
+                  <position x="450" y="1380"/>
+                  <position x="325" y="1380"/>
+                  <position x="325" y="530"/>
+                  <position x="201" y="530"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Home_Reset_PB_Virtual</variable>
+            </contact>
+            <comment localId="116" height="40" width="870">
+              <position x="320" y="1560"/>
+              <content>
+                <xhtml:p><![CDATA[Space for expanding the logic for the red and blue buttons]]></xhtml:p>
+              </content>
+            </comment>
+            <comment localId="117" height="40" width="1080">
+              <position x="260" y="2110"/>
+              <content>
+                <xhtml:p><![CDATA[Add bottom Switch to get poistion of the GD here]]></xhtml:p>
+              </content>
+            </comment>
+            <contact localId="118" height="20" width="21" negated="false">
+              <position x="320" y="2720"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="1">
+                  <position x="320" y="2730"/>
+                  <position x="100" y="2730"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Home_White_PD_Floor_03</variable>
+            </contact>
+            <contact localId="120" height="20" width="21" negated="true">
+              <position x="450" y="1430"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="24">
+                  <position x="450" y="1440"/>
+                  <position x="325" y="1440"/>
+                  <position x="325" y="530"/>
+                  <position x="201" y="530"/>
+                </connection>
+                <connection refLocalId="101">
+                  <position x="450" y="1440"/>
+                  <position x="300" y="1440"/>
+                  <position x="300" y="580"/>
+                  <position x="201" y="580"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Home_Red_PB_Floor_03</variable>
+            </contact>
+            <coil localId="121" height="20" width="21" negated="false">
+              <position x="1270" y="1430"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="123">
+                  <position x="1270" y="1440"/>
+                  <position x="1041" y="1440"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Home_Green_PB_Auto_03</variable>
+            </coil>
+            <contact localId="122" height="20" width="21" negated="false">
+              <position x="450" y="1480"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="24">
+                  <position x="450" y="1490"/>
+                  <position x="325" y="1490"/>
+                  <position x="325" y="530"/>
+                  <position x="201" y="530"/>
+                </connection>
+                <connection refLocalId="101">
+                  <position x="450" y="1490"/>
+                  <position x="300" y="1490"/>
+                  <position x="300" y="580"/>
+                  <position x="201" y="580"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Home_Green_PB_Auto_03</variable>
+            </contact>
+            <contact localId="123" height="20" width="21" negated="true">
+              <position x="1020" y="1430"/>
+              <connectionPointIn>
+                <relPosition x="0" y="10"/>
+                <connection refLocalId="120">
+                  <position x="1020" y="1440"/>
+                  <position x="471" y="1440"/>
+                </connection>
+                <connection refLocalId="122">
+                  <position x="1020" y="1440"/>
+                  <position x="810" y="1440"/>
+                  <position x="810" y="1490"/>
+                  <position x="471" y="1490"/>
+                </connection>
+              </connectionPointIn>
+              <connectionPointOut>
+                <relPosition x="21" y="10"/>
+              </connectionPointOut>
+              <variable>Reset_Green_Lights</variable>
+            </contact>
+          </LD>
+        </body>
+      </pou>
+    </pous>
+  </types>
+  <instances>
+    <configurations>
+      <configuration name="Config0">
+        <resource name="Res0">
+          <task name="task0" priority="0" interval="T#20ms">
+            <pouInstance name="instance0" typeName="Master_Program"/>
+          </task>
+        </resource>
+      </configuration>
+    </configurations>
+  </instances>
+</project>
